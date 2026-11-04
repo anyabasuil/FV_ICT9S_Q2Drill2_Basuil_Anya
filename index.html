@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Q2 Drill 2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+        }
+
+        .navbar-brand {
+            color: #17365d;
+            font-weight: bold;
+        }
+
+        .navbar-logo-placeholder {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border: 2px dashed #cbd5e1;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            position: relative;
+        }
+
+        .header-img {
+            display: block;
+            height: 480px;
+            object-fit: cover;
+            filter: brightness(55%);
+        }
+
+        .hero-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: min(90%, 800px);
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-caption h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #17365d;
+            font-weight: bold;
+        }
+
+        .school-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gold {
+            color: #c69c35;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header-img {
+                height: 350px;
+            }
+
+            .hero-caption h1 {
+                font-size: 25px;
+            }
+
+            .hero-caption p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2 fs-4" href="#home">
+                <span class="navbar-logo" role="img" aria-label="Logo">
+                    <img src="https://findschools.ph/wp-content/uploads/2026/03/OBMCLOGO2024-04-1.webp" alt="O.B. MONTESSORI CENTER Logo"
+                    sizes="70px" style="width: 70px; height: 70px;">
+                </span>
+                <span>O.B. MONTESSORI CENTER</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#campuses">Campuses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary rounded-1 px-4"
+                           href="https://obmontessori.orangeapps.ph/"
+                           target="_blank">
+                            School Portal
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="home">
+
+        <div class="hero">
+            <img
+                src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/4069ea7e-83d6-4367-8825-71aa1ad6b88d/JUNIOR+HIGH+SCHOOL+PROGRAM+-+HERO+IMAGE+-+JAR_3329a.jpg"
+                class="w-100 header-img"
+                alt="Students inside a classroom">
+
+            <div class="hero-caption">
+                <h1>A DIAMOND LEGACY OF LEARNING</h1>
+                <p>
+                    Welcome to O.B. Montessori Center—a place where students learn, grow,
+                    and discover their full potential.
+                </p>
+                <a href="#about" class="btn btn-warning px-4">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5 bg-light">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-md-6">
+
+                    <h2 class="title mb-3">
+                        About Our School
+                    </h2>
+
+                    <p class="text-secondary">
+                        Operation Brotherhood Montessori Center
+                        is a progressive co-educational school
+                        in the Philippines that follows the
+                        educational philosophy of Dr. Maria Montessori.
+                    </p>
+
+                    <p class="text-secondary">
+                        The school aims to develop independent,
+                        responsible, and productive individuals.
+                        Students are encouraged to explore their
+                        interests, develop their abilities, and
+                        become lifelong learners.
+                    </p>
+
+                    <a href="https://obmontessori.edu.ph/"
+                       target="_blank"
+                       class="btn btn-primary">
+                        Official Website
+                    </a>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <img
+                        src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/bd21fe51-4035-4581-af3d-8e5ad73c641e/RAF09633.JPG"
+                        class="img-fluid rounded shadow-sm"
+                        alt="School learning environment">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="campuses" class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="title">
+                    Our Campuses
+                </h2>
+
+                <p class="text-secondary">
+                    Explore the five campuses of
+                    O.B. Montessori Center.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card school-card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/51bf9a1b-c4fc-42b1-abe6-945af52780da/OBMC+MONTESSORI+AN+1+-+AY+2026+FA.jpg"
+                            class="card-img-top"
+                            alt="School campus building">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title title">
+                                OBMC Angeles
+                            </h5>
+
+                            <p class="gold fw-semibold small">
+                                Angeles City, Pampanga
+                            </p>
+
+                            <p class="card-text text-secondary">
+                                Providing a welcoming environment
+                                for students to learn and grow.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card school-card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9804865a-f6de-47d0-b463-c569491b9621/OBMC+MONTESSORI+FV+1+-+AY+2026+FA.jpg"
+                            class="card-img-top"
+                            alt="School campus building">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title title">
+                                OBMC Fairview
+                            </h5>
+
+                            <p class="gold fw-semibold small">
+                                Fairview, Quezon City
+                            </p>
+
+                            <p class="card-text text-secondary">
+                                Encouraging students to develop
+                                their knowledge and abilities.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card school-card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/affba656-d015-4b96-a8ba-3ef5bbbc2c39/OBMC+MONTESSORI+GH+-+AY+2026+FA.jpg"
+                            class="card-img-top"
+                            alt="School campus building">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title title">
+                                OBMC Greenhills
+                            </h5>
+
+                            <p class="gold fw-semibold small">
+                                Greenhills, San Juan City
+                            </p>
+
+                            <p class="card-text text-secondary">
+                                Promoting creativity, independence,
+                                and a love for learning.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="card school-card h-100 shadow-sm">
+
+                        <img
+                            src="https://obmontessori.orangeapps.ph/landing/obmontessori/images/Las%20Pinas%20Facade.jpg"
+                            class="card-img-top"
+                            alt="School campus building">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title title">
+                                OBMC Las Piñas
+                            </h5>
+
+                            <p class="gold fw-semibold small">
+                                B.F. Homes, Las Piñas City
+                            </p>
+
+                            <p class="card-text text-secondary">
+                                Providing opportunities for
+                                academic and personal development.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+
+                    <div class="card school-card h-100 shadow-sm">
+
+                        <img
+                            src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/97d122d3-7288-49cb-bcdd-3c210e3366f8/OBMC+MONTESSORI+SA+1+-+AY+2026+FA.jpg"
+                            class="card-img-top"
+                            alt="School campus building">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title title">
+                                OBMC Sta. Ana
+                            </h5>
+
+                            <p class="gold fw-semibold small">
+                                Sta. Ana, Manila City
+                            </p>
+
+                            <p class="card-text text-secondary">
+                                Supporting students through
+                                education and community involvement.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+
+        <div class="container text-center">
+
+            <h2 class="title mb-3">
+                Learn More About OBMC
+            </h2>
+
+            <p class="text-secondary">
+                Visit the official website for more information
+                about the school and its programs.
+            </p>
+
+            <a href="https://obmontessori.edu.ph/"
+               target="_blank"
+               class="btn btn-primary px-4">
+                Visit Official Website
+            </a>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white pt-5 pb-3">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-md-5">
+
+                    <h5 class="text-warning">
+                        O.B. MONTESSORI CENTER
+                    </h5>
+
+                    <p class="text-white-50">
+                        A Diamond Legacy of Learning.
+                        Developing independent, responsible,
+                        and productive individuals.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5 class="text-warning">Quick Links</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="mb-2">
+                            <a href="#home" class="text-white-50">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#about" class="text-white-50">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#campuses" class="text-white-50">
+                                Campuses
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h5 class="text-warning">Contact Information</h5>
+
+                    <p class="text-white-50">
+                        Phone: +63 2 8722 9720 to 26
+                    </p>
+
+                    <p class="text-white-50">
+                        Email: info@obmontessori.edu.ph
+                    </p>
+
+                    <a href="https://obmontessori.edu.ph/"
+                       target="_blank"
+                       class="text-white">
+                        Official Website
+                    </a>
+
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="text-center text-white-50 small">
+
+                <p class="mb-1">
+                    © 2026 O.B. Montessori Center.
+                    All Rights Reserved.
+                </p>
+
+                <p class="mb-0">
+                    Anya H. Basuil 9-Sapphire 
+                    
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<!---References:
+O.B. Montessori Center. (n.d.). O.B. Montessori Center. 
+    https://obmontessori.edu.ph/
